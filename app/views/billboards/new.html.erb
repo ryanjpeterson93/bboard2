@@ -1,2 +1,9 @@
 <h1>Billboards#new</h1>
-<p>Find me in app/views/billboards/new.html.erb</p>
+<hr />
+<%= form_with(model: @billboard, local: true, class: "ui form" ) do |f| %>
+  <div class="field">
+    <%= f.label :name %>
+    <%= f.text_field :name, required: true, placeholder: "Billboard Name" %>
+  </div>
+  <%= f.submit nil, class: "ui blue button inverted" %>
+<% end %>

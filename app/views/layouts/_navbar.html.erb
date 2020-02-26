@@ -1,16 +1,14 @@
-<nav>
-  <ul>
-    <li>
-      <%= link_to 'Artists', artists_path %>
-    </li>
-    <li>
-      <%= link_to 'Add Artist', new_artist_path %>
-    </li>
-    <li>
-      <%= link_to 'Billboards', billboards_path %>
-    </li>
-    <li>
-      <%= link_to 'Add Billboards', new_billboard_path %>
-    </li>
-  </ul>
-</nav>
+<div class="ui secondary menu">
+  <a>
+    <%= link_to 'Artists', artists_path, class: 'active item' %>
+  </a>
+  <a>
+    <%= link_to 'Add Artist', new_artist_path, class: 'active item' %>
+  </a>
+  <a>
+    <%= link_to 'Billboards', billboards_path, class: 'active item' %>
+  </a>
+  <a>
+    <%= link_to 'Add Billboards', new_billboard_path, class: 'active item' %>
+  </a>
+</div>

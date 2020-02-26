@@ -1,5 +1,11 @@
 <h1>Billboards#index</h1>
-
-<% @billboards.each do |billboard| %>
-
-<% end %>
+<%# <%= link_to 'Delete a Billboard', billboard_path, class: 'active item', method: :delete %> %>
+<hr />
+<h2><%= @billboards.length <= 0 ? "No Billboards" : "" %></h2> 
+<ul>
+  <% @billboards.each do |billboard| %>
+    <li>
+      <%= link_to billboard.name, billboard %>
+    </li>
+  <% end %>
+</ul>
