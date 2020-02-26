@@ -10,7 +10,7 @@ before_action :set_artist, only: [:show, :destroy]
   end
 
   def new
-    @course = Course.new
+    @artist = Artist.new
   end
 
   def edit
