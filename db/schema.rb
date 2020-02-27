@@ -28,6 +28,7 @@ ActiveRecord::Schema.define(version: 2020_02_26_215429) do
   end
 
   create_table "songs", force: :cascade do |t|
+    t.string "name"
     t.bigint "billboard_id", null: false
     t.bigint "artist_id", null: false
     t.datetime "created_at", precision: 6, null: false

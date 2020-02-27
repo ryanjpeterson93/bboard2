@@ -1,10 +1,12 @@
 <h1>Artists#index</h1>
 <hr />
+<%= link_to 'Add New Song', new_artist_song_path(@artists) %>
 <h2><%= @artists.length <= 0 ? "No Artists" : "" %></h2> 
 <ul>
   <% @artists.each do |artist| %>
     <li>
       <%= link_to artist.name, artist %>
+      <%= link_to 'Delete', artist_path(artist), method: :delete %>
     </li>
   <% end %>
 </ul>

@@ -1,0 +1,6 @@
+<h1>Songs#index</h1>
+
+<% @songs.each do |song| %>
+  <%= song.name %>
+  <%= link_to 'Delete', song_path(song), method: :delete %>
+<% end %>
